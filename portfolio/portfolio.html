@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notre Portfolio - Photographie</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon" />
+    <script src="https://kit.fontawesome.com/729c57c91c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../layout.css">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 
     <header>
-
+        <div class="logo">
+            <span class="material-symbols-outlined header-ap">photo_camera</span>
+            <span class="name">Pixel<span>Forge</span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="../equipe/equipe.html">Équipe</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-bouton">
+            <a href="#">Reserver une seance</a>
+            <span class="burger material-symbols-outlined">menu</span>
+        </div>
     </header>
 
     <main>
 
-        <section class="hero">
+        <section class="hero" id="tete">
             <p><span>Travaux Sélectionnés</span></p>
             <h1>Notre Portfolio</h1>
             <p>Une sélection de projets couvrant mariages, portraits, événements et campagnes commerciales.</p>
@@ -148,7 +165,61 @@
     </main>
 
     <footer>
-   
+        <div class="grid">
+            <div class="list">
+                <div class="logo">
+                    <span class="material-symbols-outlined header-ap">photo_camera</span>
+                    <span class="name">Pixel<span>Forge</span></span>
+                </div>
+                <p>
+                    Immortaliser vos moments extraordinaires avec précision et art depuis 2015.
+                </p>
+                <div class="sociaux">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i> 
+                </div>
+            </div>
+            <div class="list">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="../index.html#hero">Accueil</a></li>
+                    <li><a href="#tete">Portfolio</a></li>
+                    <li><a href="../equipe/equipe.html">Équipe</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <h3>Services</h3>
+                <ul>
+                    <li>Photographie Mariage</li>
+                    <li>Séances Portrait</li>
+                    <li>Couverture Événements</li>
+                    <li>Photographie Commerciale</li>
+                </ul>
+            </div>
+            <div class="list">
+                <h3>Contact</h3>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined icon-footer">location_on</span>
+                        14 Rue Aperture, Quartier Studio, Brazzaville
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined icon-footer">call</span>
+                        +242 06 000 000
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined icon-footer">mail</span>
+                        hello@pixelforge.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mension">
+            <p>&copy; 2025 Agence PixelForge. Tous droits réservés.</p>
+            <p>Politique de Confidentialité · Conditions d'Utilisation</p>
+        </div>
     </footer>
 
 </body>
