@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--background);
+     color: var(--foreground);
+
+    font-family: "Fraunces", Georgia, serif;
+
+}
+
+
+.hero {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    text-align: center;  
+    gap: 15px;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+
+
+.hero h1 {
+    font-size: 3.2rem;
+
+    font-weight: 700;
+} 
+
+
+
+
+
+.bouttons-filtres {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap; 
+    padding: 0 20px;
+}
+
+.bouttons-filtres .item {
+    padding: 10px 24px;
+    border: none;
+    background-color: var(--background);
+
+    color: var(--foreground);
+
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 25px;
+    font-size: var(--font-size);
+    transition: all 0.25s ease;
+}
+
+
+.bouttons-filtres .item:hover,
+#tout {
+    background-color: var(--couleur-de-base);
+    color: var(--background);
+}
+
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;  
+    gap: 35px;  
+    margin: 40px 20px; 
+}
+
+
+.portfolio-item {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.portfolio-item figure {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: 380px; 
+
+    display: block;
+    object-fit: cover; 
+    border-radius: 12px; 
+    transition: transform 0.4s ease;
+}
+
+
+.portfolio-item:hover img {
+    transform: scale(1.02);
+}
+
+
+.portfolio-item figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+
+
+.portfolio-item figcaption span {
+    font-size: 0.75rem;
+    color: var(--couleur-de-base);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+.portfolio-item figcaption h2 {
+    font-size: 1.35rem;
+    font-weight: 900;
+
+    color: var(--foreground);
+}
+
+
+.portfolio-item figcaption a {
+    color: var(--foreground);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 2px solid var(--couleur-de-base); 
+    padding-bottom: 2px;
+    margin-top: 4px;
+    
+}
+
+.portfolio-item figcaption a:hover {
+    color: var(--couleur-de-base);
+}
+
+
+@media (min-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 40px 4%;
+    }
+}
+
+@media (min-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);  
+        margin: 50px 8%; 
+        gap: 40px;
+    }
+}
